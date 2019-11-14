@@ -14,7 +14,7 @@ def fortune_form():
     """Renders the fortune form page."""
     return render_template('fortune_form.html')
 
-@app.route('/fortune_results')
+@app.route('/results')
 def fortune_results():
     """Displays the user's fortune."""
     users_favorite_animal = request.args.get('animal')
